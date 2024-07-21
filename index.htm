@@ -6,26 +6,32 @@
     <link rel="stylesheet" href="estilo.css">
     <title>Encriptador</title>
 </head>
-<body>
-    <h1>Encriptador</h1> 
-    <img src="./recursos UI/" alt="icono" class="icono_encriptador" />
-    <div class="areaParaEncriptar">
-        <p>INGRESE EL TEXTO AQUI</p>
-        <h5>Solo letras minúsculas y sin acentos</h5>
-        <button>Encriptar</button>
-        <button>Desencriptar</button>
+<div>
+    <div class="titulo_container">
+    <h1 class="titulo">Encriptador</h1> 
+    <img src="./recursos UI/icono.png" alt="icono" class="icono_encriptador" />
     </div>
-    <div class="areaParaDesencriptar">
-        <p>
-            area texto
-        </p>
-
-        <button>Copiar</button>
-    </div>
-
-<footer>
-    <h3>Creado por xNitox</h3>
-    <div>
+    <div class="container_area">
+        <div class="container_encriptar">
+        <textarea class="ingresar_texto" placeholder="INGRESE EL TEXTO AQUI"></textarea>
+        <div class="areaParaEncriptar_buttons">
+            <h5 class="instrucciónes">Solo letras minúsculas y sin acentos</h5>
+            <div class="container_buttons_encriptar_desencriptar">
+            <button class="area_encriptar_buttons">Encriptar</button>
+            <button class="area_encriptar_buttons">Desencriptar</button>
+            </div>
+        </div>
+        </div>
+        <div class="resultado">
+            <textarea class="resultado_texto"> area texto </textarea>
+            <div class="resultado_buttons">
+            <button class="button_copiar">Copiar</button>
+            </div>
+        </div>
+</div>
+<footer class="footer">
+    <h4 class="autor">Creado por xNitox</h4>
+    <div class="rss">
     <a>Github</a>
     <a>Linkedin</a>
     </div>
