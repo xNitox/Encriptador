@@ -13,19 +13,20 @@
     </div>
     <div class="container_area">
         <div class="container_encriptar">
-        <textarea class="ingresar_texto" placeholder="INGRESE EL TEXTO AQUI"></textarea>
+        <input class="ingresar_texto"  oninput="coordinacionDeAmbosTextos()" placeholder="INGRESE EL TEXTO AQUI" id="textoEntrada"  ></input>
         <div class="areaParaEncriptar_buttons">
             <h5 class="instrucciónes">Solo letras minúsculas y sin acentos</h5>
             <div class="container_buttons_encriptar_desencriptar">
-            <button class="area_encriptar_buttons">Encriptar</button>
-            <button class="area_encriptar_buttons">Desencriptar</button>
+            <button class="area_encriptar_buttons"  onclick="encriptador()">Encriptar</button>
+            <button class="area_encriptar_buttons"  onclick="desencriptar()">Desencriptar</button>
             </div>
         </div>
         </div>
         <div class="resultado">
-            <textarea class="resultado_texto"> area texto </textarea>
+            <img src="/recursos UI/normal.png" class="imagen_sin_encriptar" id="noTexto"  alt="imagen_texto_no_encriptado">
+            <textarea class="resultado_texto" id="textoResultado"  readonly="readonly" style="display: none;"  oninput="ocultarImagen()" > </textarea>
             <div class="resultado_buttons">
-            <button class="button_copiar">Copiar</button>
+            <button class="button_copiar" onclick="copiarTexto()" id="button_copiar">Copiar</button>
             </div>
         </div>
 </div>

@@ -14,7 +14,7 @@ body{
     padding: 0;
     margin: 0;
     border: 0;
-    
+    background-color: #242f40;
 }
 .titulo_container{
     display: flex;
@@ -29,6 +29,7 @@ body{
     font-family: "Stalinist One", sans-serif;
     font-weight: 400;
     font-style: normal;
+    background-color: #cca43b;
 }
 
 .icono_encriptador{
@@ -79,6 +80,7 @@ body{
     height: 1rem ;
     font-size: 0.7;
     text-align: center;
+    color: #fff;
 }
 
 .container_buttons_encriptar_desencriptar{
@@ -99,6 +101,14 @@ body{
     justify-content: center;
     gap: 1rem;
 
+}
+
+.imagen_sin_encriptar{
+    display: flex;
+    width: 20rem;
+    height: 20rem;
+    align-self: center;
+    
 }
 
 .resultado_texto{
@@ -130,7 +140,7 @@ body{
 
 .footer{
     display: flex;
-    background-color: black;
+    background-color: #363636;
     color: aliceblue;
     justify-content: center;
     margin-bottom: 0;
