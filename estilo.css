@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Monofett&family=Orbitron:wght@400..900&family=Stalinist+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Kdam+Thmor+Pro&family=Monofett&family=Orbitron:wght@400..900&family=Stalinist+One&display=swap');
 * {
     box-sizing: border-box;
 }
@@ -52,20 +52,19 @@ body{
     justify-content: center;
     width: 40rem;
     height: 45rem;
-    
-
-
 }
 
 .ingresar_texto{
-    display: flex;
-    font-family: "Monofett", monospace;
+    display:flex;
+    font-family: "Kdam Thmor Pro", sans-serif;
     font-weight: 400;
     font-style: normal;
     width: 39rem;
     height: 30rem;
-    font-size: 2.5rem;
-    align-self: center;
+    font-size: 1.5rem;
+    resize: none;
+    
+    
 }
 
 .areaParaEncriptar_buttons{
@@ -113,14 +112,15 @@ body{
 
 .resultado_texto{
     display: flex;
-    font-family: "Monofett", monospace;
+    font-family: "Kdam Thmor Pro", sans-serif;
     font-weight: 400;
     font-style: normal;
     width: 39rem;
     height: 30rem;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     margin-top: 1rem;
     align-self: center;
+    resize: none;
 
 }
 
