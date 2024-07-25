@@ -70,7 +70,7 @@ function coordinacionDeAmbosTextos () {
 
 //clipboardCopy estudiar mas de esta Api igual
 function copiarTexto() {
-    let textoParaCopiar = document.getElementById('textoEntrada').value;
+    let textoParaCopiar = document.getElementById('textoResultado').value;
     //aqui usamos la api writeText copia el texto 
     //then() https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Promise/then
     /* ejemplo de uso p.then(alCumplir[, enRechazo]);
