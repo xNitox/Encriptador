@@ -66,6 +66,7 @@ function coordinacionDeAmbosTextos () {
     let borrarTexto = document.getElementById('textoResultado');
     if(textoEntrada === ''){
         borrarTexto.value = '';
+        ocultarImagen();
     }
     requisitoEscritura();
 }
@@ -172,6 +173,4 @@ Si  detección (valor de tectoEntrada) No cumple con el patrín o requisito de l
     let cadena = "hola";
     let resultado = cadena.slice(1, -1);
     console.log(resultado); // "ol"
-
-
     */
