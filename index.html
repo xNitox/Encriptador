@@ -13,9 +13,9 @@
     </div>
     <div class="container_area">
         <div class="container_encriptar">
-        <textarea class="ingresar_texto"  oninput="coordinacionDeAmbosTextos()" placeholder="INGRESE EL TEXTO AQUI" id="textoEntrada"  autocomplete="off" > </textarea>
+        <textarea class="ingresar_texto" pattern="[a-z]" oninput="coordinacionDeAmbosTextos()" placeholder="INGRESE EL TEXTO AQUI" id="textoEntrada"  autocomplete="off" > </textarea>
         <div class="areaParaEncriptar_buttons">
-            <h5 class="instrucciónes">Solo letras minúsculas y sin acentos</h5>
+            <h5 id="instruccionesjs" oninput="requisitoEscritura()" class="instrucciónes">Solo letras minúsculas y sin acentos</h5>
             <div class="container_buttons_encriptar_desencriptar">
             <button class="area_encriptar_buttons"  onclick="encriptador()">Encriptar</button>
             <button class="area_encriptar_buttons"  onclick="desencriptar()">Desencriptar</button>
@@ -24,7 +24,7 @@
         </div>
         <div class="resultado">
             <img src="/recursos UI/normal.png" class="imagen_sin_encriptar" id="noTexto"  alt="imagen_texto_no_encriptado">
-            <textarea class="resultado_texto" id="textoResultado"  readonly="readonly" style="display: none;"  oninput="ocultarImagen()" > </textarea>
+            <textarea class="resultado_texto" pattern="[a-z]" id="textoResultado"  readonly="readonly" style="display: none;"  oninput="ocultarImagen()" > </textarea>
             <div class="resultado_buttons">
             <button class="button_copiar" onclick="copiarTexto()" id="button_copiar">Copiar</button>
             </div>

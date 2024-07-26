@@ -27,6 +27,7 @@ function encriptador() {
     }).join('');
     datosSalida.value = encriptado;
     ocultarImagen();
+    requisitoEscritura();
 }
 function desencriptar() {
     let datosEntradaDesencriptar = document.getElementById('textoEntrada').value;
@@ -41,6 +42,7 @@ function desencriptar() {
                     .replace(/ufat/g,'u');
     datosSalidaDesencriptar.value = descifrar;
     ocultarImagen();
+    requisitoEscritura();
 }
 function ocultarImagen() {
     let conTexto = document.getElementById('textoResultado').value;
@@ -64,8 +66,8 @@ function coordinacionDeAmbosTextos () {
     let borrarTexto = document.getElementById('textoResultado');
     if(textoEntrada === ''){
         borrarTexto.value = '';
-        ocultarImagen();
     }
+    requisitoEscritura();
 }
 
 //clipboardCopy estudiar mas de esta Api igual
@@ -92,3 +94,41 @@ p.then(function(value) {
     })
 }
 // https://midu.dev/leer-copiar-pegar-portapapeles-javascript/ <--practicar
+
+//https://lenguajejs.com/javascript/web-apis/speechsynthesis/ el speech
+function requisitoEscritura() {
+    const texto = document.getElementById('textoEntrada').value;
+    const requisito = /^[a-z0-9 ]+$/; // Solo minúsculas, números y espacios y el espacio despues del 9 para que igual se permita
+    const mensajeVoz = new SpeechSynthesisUtterance('Solo se permiten letras minúsculas y números');
+    if (!requisito.test(texto)){/*el operador ! inverte el valor booleano si es verdadero lo inverte a falsa*/ {
+    speechSynthesis.speak(mensajeVoz);
+    limitadorDeCaracteres(); }
+    }
+}
+
+    //entonces 
+//^ este simbolo "^" hace que se deba comenzar como requisito con las especificaciones que estan dentro de [] de la a hacia la z minuscula y de 0-9 y espacio , estos estan permitidos
+// el + nos dice que los caracteres anteriores se pueden repetir y el $ nos obliga a que deba terminar con uno de los caracteres permitidos dentro de  [] 
+// /^[a-z0-9 ]+$/ es una expresion regular recuerda esto xd 
+/*Explicacion del if : el operador "!" el operador logico de negacion NOT (!)
+este se encarga de negar un valor booleano es decir si es true lo niega y se converite en un fasle
+entonces:
+Si texto cumple con el patron que definimos en la expresion regular "Requisitos"
+    este sera "True" y debiera ejecutarse el mensaje , PERO:
+    al tener el operador de negación se converite en "false" y no se ejecuta la voz.
+Si el texto No cumple con el patron que definimos en "Requisitos "
+entonces sera "False" y no se ejecuta la voz PERO:
+    al tener el operador de negación este se vuelve "True" y ejecuta la voz.
+    a seguir estudiando! */
+function limitadorDeCaracteres() {
+    let inputField = document.getElementById('textoEntrada');
+    let limitante = /^[a-z0-9]*$/; // Permitir solo letras minúsculas y números
+    
+    inputField.addEventListener('input', function() {
+        let detección = inputField.value;
+        
+        if (!limitante.test(detección)) {
+            inputField.value = detección.slice(0, -1); // Eliminar el último carácter ingresado
+        }
+    });
+}
