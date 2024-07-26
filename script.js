@@ -98,8 +98,8 @@ p.then(function(value) {
 //https://lenguajejs.com/javascript/web-apis/speechsynthesis/ el speech
 function requisitoEscritura() {
     const texto = document.getElementById('textoEntrada').value;
-    const requisito = /^[a-z0-9 ]+$/; // Solo minúsculas, números y espacios y el espacio despues del 9 para que igual se permita
-    const mensajeVoz = new SpeechSynthesisUtterance('Solo se permiten letras minúsculas y números');
+    const requisito = /^[a-z ]+$/; // Solo minúsculas, y espacios y el espacio despues del 9 para que igual se permita
+    const mensajeVoz = new SpeechSynthesisUtterance('Solo se permiten letras minúsculas y sin acentos');
     if (!requisito.test(texto)){/*el operador ! inverte el valor booleano si es verdadero lo inverte a falsa*/ {
     speechSynthesis.speak(mensajeVoz);
     limitadorDeCaracteres(); }
@@ -122,7 +122,7 @@ entonces sera "False" y no se ejecuta la voz PERO:
     a seguir estudiando! */
 function limitadorDeCaracteres() {
     let inputField = document.getElementById('textoEntrada');
-    let limitante = /^[a-z0-9]*$/; // Permitir solo letras minúsculas y números
+    let limitante = /^[a-z ]*$/; // Permitir solo letras minúsculas y números
     
     inputField.addEventListener('input', function() {
         let detección = inputField.value;
