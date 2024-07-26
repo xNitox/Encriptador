@@ -121,14 +121,57 @@ entonces sera "False" y no se ejecuta la voz PERO:
     al tener el operador de negación este se vuelve "True" y ejecuta la voz.
     a seguir estudiando! */
 function limitadorDeCaracteres() {
-    let inputField = document.getElementById('textoEntrada');
-    let limitante = /^[a-z ]*$/; // Permitir solo letras minúsculas y números
-    
-    inputField.addEventListener('input', function() {
-        let detección = inputField.value;
-        
+    let compruebaSiHayDatos = document.getElementById('textoEntrada');
+    let limitante = /^[a-z ]*$/; // Permitir solo letras minúsculas y espacios
+    // addEventListener registra un evento o parametro de tipo 'input' , hay más como click', 'input', 'mouseover', etc.,
+    //a un objeto especifico del DOM
+    // acompañado de una funciona anonima que comprueba si hay cambios en el textoEntrada
+    /* una funcion anonima , es una funcion sin nombre que se usa para activar donde se le necesita por decirlo asi
+    ejemplos:
+
+    document.getElementById('miBoton').addEventListener('click', function() {
+    alert('El botón ha sido clicado!');
+    });
+    otro:
+    let numeros = [1, 2, 3, 4, 5];
+    let cuadrados = numeros.map(function(numero) {
+    return numero * numero;
+    });
+    console.log(cuadrados); // [1, 4, 9, 16, 25]
+*/
+    compruebaSiHayDatos.addEventListener('input', function() { 
+        // seria asi element.addEventListener(tipoDeEvento, funciónARegistrar)
+        //el evento de tipo input se activa cada vez que cambie el valor de un elemento ya sea
+        //input , textarea, selec,  esto es mas recomendable para "Dectectar cambios en tiempo REAL"
+        let detección = compruebaSiHayDatos.value;
+        // a traves del listener se obtiene  el valor actual y se guarda en detección
         if (!limitante.test(detección)) {
-            inputField.value = detección.slice(0, -1); // Eliminar el último carácter ingresado
-        }
+            compruebaSiHayDatos.value = detección.slice(0, -1); // Eliminar el último carácter ingresado
+        }                              //string.slice(inicio, fin);                 
+
     });
 }
+/* en el if
+Se usa el operador de Negacion ! donde invierte el resultado del valor booleano
+    *El método test() ejecuta la búsqueda de una ocurrencia entre una 
+    expresión regular y una cadena especificada. Devuelve true o false.*
+Luego     
+    compara detección con limitante 
+Si  detección (valor de textoEntrada) Si cumple con el patrón o requisito de limitante 
+    devuelve un true y ! lo con vierte en false
+Si  detección (valor de tectoEntrada) No cumple con el patrín o requisito de limitante
+    devuelve un false y ! lo convierte en True y se ejecuta la limitacion de escritura de caracteres
+    que es simplemente borra el ultimo caracter escrito a través de slice.(0,-1)
+    Slice se usa para extraer parte de un texto y lo devuelve como un nuevo texto (string)
+    string.slice(inicio, fin);  detección.slice(0, -1);
+    inicio : el indice donde comienza la extracción ("0") 
+    fin: donde termina la extracción "indice" en este caso ("-1), si se omite (no pones nada) se extrae hasta el final de la cadena
+    Los indices negativos en slicd se cuenta desde el final de la cadena
+    asi -1 el ultimo , -2 penultimo y asi, como ejemplo :
+
+    let cadena = "hola";
+    let resultado = cadena.slice(1, -1);
+    console.log(resultado); // "ol"
+
+
+    */
