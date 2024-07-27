@@ -8,8 +8,8 @@
 </head>
 <div>
     <div class="titulo_container">
-    <h1 class="titulo">Encriptador</h1> 
-    <img src="./recursos UI/icono.png" alt="icono" class="icono_encriptador" />
+    <h1 class="titulo">LiamEncryptor</h1> 
+    <img src="./recursosUI/icono.gif" alt="icono" class="icono_encriptador" />
     </div>
     <div class="container_area">
         <div class="container_encriptar">
@@ -23,7 +23,7 @@
         </div>
         </div>
         <div class="resultado">
-            <img src="/recursos UI/normal.png" class="imagen_sin_encriptar" id="noTexto"  alt="imagen_texto_no_encriptado">
+            <img src="/recursosUI/normal.png" class="imagen_sin_encriptar" id="noTexto"  alt="imagen_texto_no_encriptado">
             <textarea class="resultado_texto" pattern="[a-z]" id="textoResultado"  readonly="readonly" style="display: none;"  oninput="ocultarImagen()" > </textarea>
             <div class="resultado_buttons">
             <button class="button_copiar" onclick="copiarTexto()" id="button_copiar">Copiar</button>
@@ -33,9 +33,19 @@
 <footer class="footer">
     <h4 class="autor">Creado por xNitox</h4>
     <div class="rss">
-    <a>Github</a>
-    <a>Linkedin</a>
+    <a class="rss_github" href="https://github.com/xNitox" target="_blank"><img class="ico-github" src="./recursosUI/ico-github.png" >Github</a>
+    <a class="rss_linkedin" href="https://www.linkedin.com/in/nibaldocontreras/" target="_blank"><img class="ico-linkedin" src="/recursosUI/ico-linkedin.svg">Linkedin</a>
     </div>
+    <p class="cc" xmlns:cc="http://creativecommons.org/ns#">Esta obra está licenciada bajo 
+        <a class="cc_a" href="https://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">
+          CC BY-NC-ND 4.0
+          <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt="">
+          <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt="">
+          <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt="">
+          <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1" alt="">
+        </a>
+      </p>
+      
 </footer>
     <script src="script.js"></script>
 </body>
