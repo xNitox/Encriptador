@@ -35,6 +35,7 @@ body{
     border-radius: 0.2rem;
     padding: 0.5rem 2rem;
     text-shadow: #8400ff 0rem 0 1.7rem;
+    overflow: hidden;
     
 }
 
@@ -105,10 +106,16 @@ body{
     border: none;
     border-radius: 0.9rem;
     border-bottom: 0.2rem solid #b38206;
+    padding: 0;
+    font-size: 1rem;
+    font-family: "Orbitron", sans-serif;
+    color: #fff;
+    font-weight: 700;
 }
 .area_encriptar_buttons:hover{
     background-color:#f3f2f2;
-    border-bottom: solid #a1a1a1
+    border-bottom: solid #a1a1a1;
+    color:#d1aa47;
 }
 .resultado{
     display: flex;
@@ -117,7 +124,7 @@ body{
     height: 45rem;
     justify-content: center;
     gap: 1rem;
-
+    z-index: 1;
 }
 
 .imagen_sin_encriptar{
@@ -125,6 +132,9 @@ body{
     width: 20rem;
     height: 20rem;
     align-self: center;
+    z-index: 2;
+    position: relative;
+    overflow: hidden;
     
 }
 
@@ -157,11 +167,16 @@ body{
     border: none;
     border-radius: 0.9rem;
     border-bottom: 0.2rem solid #b38206;
+    font-size: 1rem;
+    font-family: "Orbitron", sans-serif;
+    color: #fff;
+    font-weight: 700;
     
 }
 .button_copiar:hover{
     background-color:#f3f2f2;
     border-bottom: solid #a1a1a1;
+    color:#d1aa47;
 }
 
 .footer{
@@ -228,7 +243,6 @@ body{
     font-size: 0.8rem;
     color: #fff;
     text-decoration: none;
-    background-color:;
     align-items: center;
     gap: 1rem;
     text-align:end;

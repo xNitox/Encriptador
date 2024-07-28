@@ -49,10 +49,10 @@ function ocultarImagen() {
     let imagen = document.getElementById('noTexto')
     let cuadroResultado = document.getElementById('textoResultado');
     let btnCopiar = document.getElementById('button_copiar')
-    if(conTexto === "" ){
+    if(conTexto === ""){
     cuadroResultado.style.display= 'none';
     imagen.style.display = 'block';
-    btnCopiar.style.display= 'none'
+    btnCopiar.style.display= 'none';
     }
     else{
         cuadroResultado.style.display = 'block';
@@ -64,6 +64,8 @@ function ocultarImagen() {
 function coordinacionDeAmbosTextos () {
     let textoEntrada = document.getElementById('textoEntrada').value;
     let borrarTexto = document.getElementById('textoResultado');
+    let btnCopiar = document.getElementById('button_copiar')
+
     if(textoEntrada === ''){
         borrarTexto.value = '';
         ocultarImagen();
