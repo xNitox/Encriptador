@@ -394,7 +394,7 @@ body{
     width: 40rem;
     height: 4rem;
     margin-left: 2.5rem;
-    margin-top: 0.5rem;
+    margin-top: 2rem;
 }
 .titulo{
     font-size: 2rem;
@@ -417,8 +417,6 @@ body{
 .container_encriptar{
     width: 40rem;
     height: 25rem;
-    
-    
 }
 .ingresar_texto{
     width: 37rem;
@@ -429,8 +427,8 @@ body{
 }
 .area_encriptar_buttons{
     width: 10rem;
-    height: 2rem;
-    font-size: 0.8rem;
+    height: 3rem;
+    font-size: 1rem;
 }
 .container_buttons_encriptar_desencriptar{
     width: 40rem;
@@ -466,7 +464,8 @@ body{
 }
 .button_copiar{
     width: 7rem;
-    height: 2rem;
+    height: 3rem;
+    font-size: 1rem;
 }
 .footer{
     width: 45.3rem;
@@ -525,98 +524,90 @@ body{
 @media (min-width:481px) and (max-width:768px)
 {
     .titulo_container{
-        width: 32rem;
+        width: 40rem;
         height: 1.5rem;
         margin-left: 2.5rem;
-        margin-top: 1rem;
-        margin-bottom: 4rem;
+        margin-top: 3rem;
+        margin-bottom: 5rem;
     }
     .titulo{
-        font-size: 0.8rem;
+        font-size: 1.5rem;
         width: 100%;
         text-align: center;
-        height: 2rem;
+        height: 3rem;
     }
     .icono_encriptador{
-        width: 3rem;
-        height: 3rem;
+        width: 4rem;
+        height: 4rem;
     }
     .container_area{
         flex-flow:wrap;
         width: 36rem;
-        height: 15.55rem;
+        height: 34rem;
         margin: 0.5rem;
         gap: 0;
         transform:translateY(-3rem);
     }
     .container_encriptar{
-        width: 19rem;
-        height: 10rem;
-        
-        
+        width: 25rem;
+        height: 15rem; 
     }
     .ingresar_texto{
-        width: 17rem;
-        height: 8rem;
+        width: 25rem;
+        height: 15rem;
         align-self: center;
-        
-        
     }
     .area_encriptar_buttons{
         width: 7rem;
-        height: 2rem;
+        height: 3rem;
         font-size: 0.8rem;
     }
     .container_buttons_encriptar_desencriptar{
-        width: 19rem;
-        height: 2rem;
-        
+        width: 25rem;
+        height: 2rem; 
     }
     .instrucciónes{
-        width: 19rem;
+        width: 25rem;
         height: 2rem;
-        
     }
     .resultado{
-        width: 19rem;
-        height: 8rem;
+        width: 25rem;
+        height: 15rem;
         align-items: start;
     }
     .resultado_texto{
-        width: 17rem;
-        height: 8rem;
+        width: 25rem;
+        height: 15rem;
         align-self: center;
-        
     }
     .imagen_sin_encriptar{
-        width:10rem;
-        height:10rem;
+        width:13rem;
+        height:13rem;
         transform: translateY(1.5rem);
-        
     }
     .resultado_buttons{
-        width: 20rem;
+        width: 25rem;
         height: 2rem;
         margin-top: 0;
-        
     }
     .button_copiar{
         width: 5rem;
-        height: 2rem;
+        height: 3rem;
+        font-size: 0.8rem;
     }
     .footer{
-        width: 37.3rem;
+        width: 49rem;
         height: 2rem;
     }
     .autor{
         font-size: 0.6rem;
-        width: 4rem;
+        width: 7rem;
         padding: 0;
         height: 2rem;
-        margin-left: 0;
+        transform: translateX(-1rem);
     }
     .rss{
-        width: 14rem;
+        width: 23rem;
         height: 2rem;
         justify-content: space-around;
     }
@@ -628,8 +619,7 @@ body{
         width: 1rem;
         height: 1rem;
     }
-    .rss_linkedin{
-        
+    .rss_linkedin{ 
         font-size: 0.7rem;
         gap: 0.1rem;
         transform: translateY(-0.18rem);
@@ -637,7 +627,6 @@ body{
     .ico-linkedin{
         width: 1.3rem;
         height: 1.3rem;
-        
     }
     .cc{
         font-size: 0.5rem;
@@ -652,8 +641,6 @@ body{
         margin: 0;
         font-size: 0.5rem;
         transform: translateY(0.5rem);
-        
-
     }
     .cc .cc_a .ico-cc{
         width: 0.5rem;
