@@ -12,7 +12,18 @@ body{
     padding: 0;
     margin: 0;
     border: 0;
-    background-color: #242f40;
+}
+.video-container{
+    display: flex;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.video-fondo{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
 .titulo_container{
     display: flex;
@@ -36,7 +47,6 @@ body{
     padding: 0.5rem 2rem;
     text-shadow: #8400ff 0rem 0 1.7rem;
     overflow: hidden;
-    
 }
 
 .icono_encriptador{
@@ -53,7 +63,7 @@ body{
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 45rem;
+    height: 43.55rem;
     gap: 10rem;
 }
 
@@ -74,8 +84,13 @@ body{
     height: 30rem;
     font-size: 1.5rem;
     resize: none;
-    
-    
+    opacity: 0.7;
+    border-radius: 20px;
+    cursor:default ;
+    background-color: #35A29F;
+    box-shadow: -15px -10px 20px  #0B666A;
+    border: solid 1px #0B666A;
+    color: #F3F8FF;
 }
 
 .areaParaEncriptar_buttons{
@@ -129,8 +144,8 @@ body{
 
 .imagen_sin_encriptar{
     display: flex;
-    width: 20rem;
-    height: 20rem;
+    width: 25rem;
+    height: 25rem;
     align-self: center;
     z-index: 2;
     position: relative;
@@ -149,7 +164,13 @@ body{
     margin-top: 1rem;
     align-self: center;
     resize: none;
-
+    opacity: 0.7;
+    border-radius: 20px;
+    cursor:default ;
+    background-color: #35A29F;
+    box-shadow: 15px -10px 20px  #0B666A;
+    border: solid 1px #0B666A;
+    color: #F3F8FF;
 }
 
 .resultado_buttons{
@@ -256,6 +277,16 @@ body{
     transform: translateY(-0.2rem);
 }
 @media (min-width:0px) and (max-width:360px){
+    .video-container{
+        z-index: -1;
+        width: 45.3rem;
+        height: 81rem;
+    }
+    .video-fondo{
+        object-fit: cover;
+        width: 45.3rem;
+        height: 81rem;
+    }
     .titulo_container{
         width: 40rem;
         height: 4rem;
