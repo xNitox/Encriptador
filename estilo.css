@@ -411,8 +411,144 @@ body{
         height: 1rem;
     }
 }
+@media (min-width:361px) and (max-width:375px){
+    .video-container{
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        margin-top: 0;
+    }
+    .video-fondo{
+        object-fit: cover;
+        width: 46.3rem;
+        height: 113rem;
+    }
+    .titulo_container{
+        width: 40rem;
+        height: 4rem;
+        margin-left: 2.5rem;
+        transform: translateY(1rem);
+    }
+    .titulo{
+        font-size: 2rem;
+        width: 100%;
+        text-align: center;
+        height: 4rem;
+    }
+    .icono_encriptador{
+        width: 4rem;
+        height: 4rem;
+    }
+    .container_area{
+        flex-flow:wrap;
+        width: 45rem;
+        height: 101.1rem;
+        margin: 0.5rem;
+        gap: 0;
+        transform:translateY(-3rem);
+    }
+    .container_encriptar{
+        width: 40rem;
+        height: 20rem;
+    }
+    .ingresar_texto{
+        width: 37rem;
+        height: 20rem;
+        align-self: center;
+    }
+    .area_encriptar_buttons{
+        width: 10rem;
+        height: 2rem;
+        font-size: 0.8rem;
+    }
+    .container_buttons_encriptar_desencriptar{
+        width: 40rem;
+        height: 3rem;
+    }
+    .instrucciónes{
+        width: 40rem;
+        height: 2rem;
+    }
+    .resultado{
+        width: 40rem;
+        height: 20rem;
+        align-items: start;
+    }
+    .resultado_texto{
+        width: 37rem;
+        height: 20rem;
+        align-self: center;
+        transform: translateY(-3rem);
+    }
+    .imagen_sin_encriptar{
+        width:20rem;
+        height: 25rem;
+    }
+    .resultado_buttons{
+        width: 40rem;
+        height: 2rem;
+        margin-top: 0;
+    }
+    .button_copiar{
+        width: 7rem;
+        height: 2rem;
+    }
+    .footer{
+        width: 46.3rem;
+        height: 3rem;
+    }
+    .autor{
+        font-size: 0.8rem;
+        width: 13rem;
+        padding-left: 20px;
+        height: 1rem;
+    }
+    .rss{
+        width: 15rem;
+        height: 3rem;
+        justify-content: space-around;
+    }
+    .rss_github{
+        
+        font-size: 1rem;
+    }
+    .ico-github{
+        width: 2rem;
+        height: 2rem;
+    }
+    .rss_linkedin{
+        
+        font-size: 1rem;
+        gap: 0.1rem;
+        transform: translateY(-0.2rem);
+    }
+    .ico-linkedin{
+        width: 2.3rem;
+        height: 2.3rem;
+    }
+    .cc{
+        font-size: 0.6rem;
+        margin: 0;
+        width: 19rem;
+        height: 1.9rem;
+        gap: 0.4rem;
+        margin-left: 0.5rem;
+        text-align:start;
+    }
+    .cc_a{
 
-@media (min-width:361px) and (max-width:480px){
+        width: 6rem;
+        margin: 0;
+        font-size: 0.6rem ;
+        transform: translateY(0.6rem);
+    }
+    .cc .cc_a .ico-cc{
+        width: 1rem;
+        height: 1rem;
+    }
+}
+
+@media (min-width:376px) and (max-width:480px){
 .video-container{
     z-index: -1;
     width: 100%;
