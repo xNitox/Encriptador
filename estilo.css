@@ -60,6 +60,7 @@ body{
 }
 .container_area{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -304,7 +305,7 @@ body{
         height: 4rem;
     }
     .container_area{
-        flex-flow:wrap;
+        flex-wrap:wrap;
         width: 45rem;
         height: 180rem;
         margin: 0.5rem;
@@ -442,7 +443,7 @@ body{
         height: 4rem;
     }
     .container_area{
-        flex-flow:wrap;
+        flex-wrap:wrap;
         width: 45rem;
         height: 179rem;
         margin: 0.5rem;
@@ -581,7 +582,7 @@ body{
     height: 4rem;
 }
 .container_area{
-    flex-flow:wrap;
+    flex-wrap:wrap;
     width: 45rem;
     height: 170rem;
     margin: 0.5rem;
@@ -725,7 +726,7 @@ body{
     height: 4rem;
 }
 .container_area{
-    flex-flow:wrap;
+    flex-wrap:wrap;
     width: 45rem;
     height: 135.6rem;
     margin: 0.5rem;
@@ -870,7 +871,7 @@ body{
         height: 4rem;
     }
     .container_area{
-        flex-flow:wrap;
+        flex-wrap:wrap;
         width: 63rem;
         height: 112rem;
         margin: 0.5rem;
@@ -1001,15 +1002,11 @@ body{
             width: 80rem;
             text-align: center;
         }
-        .icono_encriptador{
-            
-        }
         .container_area{
+            flex-wrap:wrap;
             width: 90rem;
             height: 115rem;
             gap: 2rem;
-        }
-        .area_encriptar_buttons{
         }
         .container_buttons_encriptar_desencriptar{
             width: 39rem;
